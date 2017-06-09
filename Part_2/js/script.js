@@ -15,11 +15,11 @@
 
         for (var j = 0, max = names.length; j < max - 1; j++) {
             var name = names[j];
-            if (name === userName) {
-                return alert(name + ', вы вошли успешно!');
-            } else {
-                return alert('Ошибка входа.')
-            }
+        }
+        if (name === userName) {
+            alert(name + ', вы вошли успешно!');
+        } else {
+            alert('Ошибка входа.')
         }
     }
 

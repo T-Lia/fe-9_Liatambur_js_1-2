@@ -4,11 +4,6 @@
     var number = prompt('Введите число:', '');
     var exponent = prompt('Введите показатель степени:', '');
 
-
-    if (isNaN(number) || isNaN(exponent)) {
-        alert('Вы ввели не число! Повторите попытку');
-    }
-
     function pow(num, exp) {
 
         var result = 1;
@@ -24,6 +19,10 @@
         return result;
     }
 
-    console.log(pow(number, exponent));
+    if (isNaN(number) || isNaN(exponent)) {
+        alert('Вы ввели не число! Повторите попытку');
+    } else {
+        console.log(pow(number, exponent));
+    }
     
 })();
