@@ -15,12 +15,12 @@
 
         for (var j = 0, max = names.length; j < max - 1; j++) {
             var name = names[j];
+            if (name === userName) {
+                alert(name + ', вы вошли успешно!');
+                return;
+            }
         }
-        if (name === userName) {
-            alert(name + ', вы вошли успешно!');
-        } else {
-            alert('Ошибка входа.')
-        }
+        alert('Ошибка входа.');
     }
 
     checkName(arrNames, userName);
